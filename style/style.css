@@ -1,3 +1,6 @@
+@font-face{  font-family: chelsea; src: url("/fonts/Chelsea.otf");
+}
+
 .category{
     border: solid red;
     display: grid;
@@ -11,6 +14,9 @@
     border: solid green;
     grid-column: span 2;
     grid-row: 1;
+    font-family: chelsea;
+    font-size: 200px;
+    text-align: center;
 }
 
 .block1{

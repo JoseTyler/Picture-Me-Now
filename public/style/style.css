@@ -1,0 +1,80 @@
+@font-face{  font-family: chelsea; src: url("/style/fonts/Chelsea.otf");
+}
+
+.category{
+    border: solid red;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+}
+
+.title{
+    border: solid green;
+    grid-column: span 2;
+    grid-row: 1;
+    font-family: chelsea;
+    text-align: center;
+    font-size: 150px;
+    bottom:0;
+}
+
+.block1{
+    border: solid blue;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.block2{
+    border: solid purple;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.footer{
+    border: solid black;
+    grid-column: span 2;
+    grid-row: 3;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* NAV BAR SETTINGS */
+.topnav {
+    background-color: rgb(176, 176, 176);
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.9);
+    overflow: hidden;
+    font-family: NixieOne;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0; 
+}
+  
+/* CURRENT LINK COLOR */
+  .topnav a.active {
+    /* background-color: rgb(165, 165, 165); */
+    color: rgb(0, 0, 0);
+}
+  
+/* LINKS */
+  .topnav a {   
+    color: #ffffff;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 20px;   
+}
+  
+/* HOVER COLOR */
+  .topnav a:hover {   
+    color: black;
+}
+
+/* NAV ICON */
+  #cameraicon{
+      height: 50px;
+      padding-right: 600px;
+      padding-top: 1px;
+}
+

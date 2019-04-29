@@ -1,4 +1,10 @@
-const express = require('express')
-const app = express()
-const methodOverride = require('method-override')
-const routes = require('./routes/index')
+
+const mongoose = require('mongoose')
+
+// Connects to a local database
+mongoose.connect("mongodb://localhost/Project-2", {useNewUrlParser:true}).then(()=>{
+    console.log ("Connected to MongoDB")
+})
+
+// export your mongoose connection
+module.exports = mongoose

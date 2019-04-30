@@ -1,7 +1,9 @@
 {{Cat.name}}
- 
 
-
+{{#each Cat.photographers}}
+<a class="noUnderline" href="/{{../Cat._id}}/photographers/{{_id}}">{{name}}</a>
+{{!-- name: {{name}} --}}
+{{/each}}
 <form action="/{{Cat._id}}?_method=DELETE" method="POST">
     <button type="submit">Delete Category</button>
 </form>

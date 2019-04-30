@@ -17,6 +17,7 @@ const catController = {
   // SHOW
   show: function(req, res) {
     Category.findById(req.params.id).then(Cat => {
+      console.log(Cat)
       res.render("cat/show", { Cat });
     });
   },

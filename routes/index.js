@@ -26,44 +26,44 @@ router.delete('/:id',catController.delete)
 
 // ------------------------------------------------------
 
-// INDEX
-router.get('/', photogrController.index)
+// // INDEX
+// router.get('/', photogrController.index)
 
-// NEW
-router.get('/new', photogrController.new)
+// // NEW
+// router.get('/new', photogrController.new)
 
-// SHOW
-router.get('/:id', photogrController.show)
+// // SHOW
+// router.get('/:id', photogrController.show)
 
-// CREATE
-router.post('/',photogrController.create)
+// // CREATE
+// router.post('/',photogrController.create)
 
-// UPDATE
-// router.put("/:id",photogrController.update)
+// // UPDATE
+// // router.put("/:id",photogrController.update)
 
-// DELETE
-router.delete('/:id',photogrController.delete)
+// // DELETE
+// router.delete('/:id',photogrController.delete)
 
-// module.exports = router
+// // module.exports = router
 
 // --------------------------------------------------------------
 
-// INDEX
-router.get('/', photoController.index)
+// // INDEX
+// router.get('/', photoController.index)
 
-// NEW
-router.get('/new', photoController.new)
+// // NEW
+// router.get('/new', photoController.new)
 
-// SHOW
-router.get('/:id', photoController.show)
+// // SHOW
+// router.get('/:id', photoController.show)
 
-// CREATE
-router.post('/',photoController.create)
+// // CREATE
+// router.post('/',photoController.create)
 
-// UPDATE
-// router.put("/:id",catController.update)
+// // UPDATE
+// // router.put("/:id",catController.update)
 
-// DELETE
-router.delete('/:id',photoController.delete)
+// // DELETE
+// router.delete('/:id',photoController.delete)
 
 module.exports = router

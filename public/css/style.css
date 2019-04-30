@@ -33,8 +33,8 @@
     color: black;
 }
 .picture{
-height: 45%;
-width: 45%;
+height: 50vh;
+width: 50vw;
 background-image: contain;
 }
 .title{

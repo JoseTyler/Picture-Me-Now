@@ -32,7 +32,7 @@ const photogrController = {
   // UPDATE
   update: function (req, res) {
     Photographers.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(() => {
-      res.redirect("/${req.params.id}/photographers/${req.params.proId}` + req.params.id);
+      res.redirect(`/${req.params.id}/photographers/${req.params.proId} + req.params.id`);
     });
   },
 

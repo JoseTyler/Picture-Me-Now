@@ -1,6 +1,8 @@
 let express = require('express')
 let router = express.Router()
 const catController = require('../controllers/catController')
+const photogrController = require('../controllers/photogrController')
+const photoController = require('../controllers/photoController')
 
 // INDEX
 router.get('/', catController.index)
@@ -20,7 +22,7 @@ router.post('/',catController.create)
 // DELETE
 router.delete('/:id',catController.delete)
 
-module.exports = router
+// module.exports = router
 
 // ------------------------------------------------------
 
@@ -42,7 +44,7 @@ router.post('/',photogrController.create)
 // DELETE
 router.delete('/:id',photogrController.delete)
 
-module.exports = router
+// module.exports = router
 
 // --------------------------------------------------------------
 

@@ -43,4 +43,4 @@ const photogrController = {
 
 
 // EXPORTS
-module.exports = catController;
+module.exports = photogrController;

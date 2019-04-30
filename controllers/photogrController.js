@@ -4,19 +4,19 @@ const photogrController = {
   // INDEX
   index: function(req, res) {
     Category.find().then(Cats => {
-      res.render("cat/index", { Cats });
+      res.render("photogr/index", { Cats });
     });
   },
 
   // NEW
   new: function(req, res) {
-    res.render("cat/new");
+    res.render("photogr/new");
   },
 
   // SHOW
   show: function(req, res) {
     Category.findById(req.params.id).then(Cat => {
-      res.render("cat/show", { Cat });
+      res.render("photogr/show", { Cat });
     });
   },
 

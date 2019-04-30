@@ -1,5 +1,12 @@
-@font-face{font-family: chelsea; src: url("/public/css/fonts/Chelsea.otf");
+@font-face{font-family: Chelsea; src: url("/css/fonts/Chelsea.otf");
 }
+
+.body{
+    background-image: url('/css/images/wallpaper.jpeg');
+    background-repeat: no-repeat;
+    background-size:  cover;
+}
+
 
 .category{
     border: solid red;
@@ -9,11 +16,11 @@
     height: 100vh;
 }
 
-#title{
-    border: solid green;
+.title{
+    /* border: solid green; */
     grid-column: span 2;
     grid-row: 1;
-    font-family: chelsea;
+    font-family: Chelsea;
     text-align: center;
     font-size: 150px;
     bottom:0;

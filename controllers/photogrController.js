@@ -1,6 +1,6 @@
 const Photographers = require("../models/Photographers");
 
-const catController = {
+const photogrController = {
   // INDEX
   index: function(req, res) {
     Category.find().then(Cats => {

@@ -1,22 +1,22 @@
 const Photos = require("../models/Photos");
 
-const catController = {
+const photoController = {
   // INDEX
   index: function(req, res) {
     Category.find().then(Cats => {
-      res.render("cat/index", { Cats });
+      res.render("photo/index", { Cats });
     });
   },
 
   // NEW
   new: function(req, res) {
-    res.render("cat/new");
+    res.render("photo/new");
   },
 
   // SHOW
   show: function(req, res) {
     Category.findById(req.params.id).then(Cat => {
-      res.render("cat/show", { Cat });
+      res.render("photo/show", { Cat });
     });
   },
 
@@ -41,4 +41,4 @@ const catController = {
 };
 
 // EXPORTS
-module.exports = catController;
+module.exports = photoController;

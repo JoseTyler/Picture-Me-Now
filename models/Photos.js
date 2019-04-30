@@ -2,9 +2,9 @@
 const mongoose = require('../db/connection')
 const Schema = mongoose.Schema
 
-const Photos = new Schema({
+const Photo = new Schema({
     url: String,
     caption: String
 })
 
-module.exports = mongoose.model('Photos', Photos)
+module.exports = mongoose.model('Photos', Photo)

@@ -22,8 +22,11 @@ router.get('/:id', catController.show)
 // CREATE  CAT
 router.post('/',catController.create)
 
+// EDIT PRO
+router.get("/:id/photographers/:proId/edit",photogrController.edit)
+
 // UPDATE
-router.put("/photographers/:proId",photogrController.update)
+router.put("/:id/photographers/:proId",photogrController.update)
 
 // UPDATE CAT
 // router.put("/:id",catController.update)

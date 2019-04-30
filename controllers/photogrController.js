@@ -19,7 +19,7 @@ const photogrController = {
   show: function (req, res) {
     Photographers.findById(req.params.proId).populate('portfolio').then(Pro => {
       console.log(Pro)
-      res.render("photogr/show", { Pro });
+      res.render("photogr/show", { Pro: Pro, catId : req.params.id });
     });
   },
 
@@ -32,7 +32,14 @@ const photogrController = {
   // UPDATE
   update: function (req, res) {
     Photographers.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(() => {
-      res.redirect("/" + req.params.id);
+      res.redirect("/${req.params.id}/photographers/${req.params.proId}` + req.params.id);
+    });
+  },
+
+  // EDIT
+  edit: function (req, res) {
+    Photographers.findById(req.params.proId).then((Pro) => {
+      res.render("photogr/update", { Pro: Pro, catId: req.params.id, proId: req.params.proId })
     });
   },
 

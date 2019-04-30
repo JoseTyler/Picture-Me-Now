@@ -4,36 +4,36 @@ const Photos = require('../models/Photos')
 
 
 const photo1 = new Photos({
-        url: String,
-    caption: String   
+        url: "https://i.imgur.com/Duer8cX.jpg",
+    caption: "Hello There"   
 })
 const photo2 = new Photos({
-        url: String,
-    caption: String   
+    url: "https://i.imgur.com/Duer8cX.jpg",
+    caption: "Hello There"    
 })
 const photo3 = new Photos({
-        url: String,
-    caption: String   
+    url: "https://i.imgur.com/Duer8cX.jpg",
+    caption: "Hello There"      
 })
 const photo4 = new Photos({
-        url: String,
-    caption: String   
+    url: "https://i.imgur.com/Duer8cX.jpg",
+    caption: "Hello There"     
 })
 const photo5 = new Photos({
-      url: String,
-    caption: String   
+    url: "https://i.imgur.com/Duer8cX.jpg",
+    caption: "Hello There"     
 })
 const photo6 = new Photos({
-      url: String,
-    caption: String   
+    url: "https://i.imgur.com/Duer8cX.jpg",
+    caption: "Hello There"     
 })
 const photo7 = new Photos({
-     url: String,
-    caption: String   
+    url: "https://i.imgur.com/Duer8cX.jpg",
+    caption: "Hello There"      
 })
 const photo8 = new Photos({
-      url: String,
-    caption: String   
+    url: "https://i.imgur.com/Duer8cX.jpg",
+    caption: "Hello There"      
 })
 
 const photographer1 = new Photographers({
@@ -68,18 +68,22 @@ const photographer4 = new Photographers({
 
 const a = new Category({
     name: "Events",
+    photo_url: ('https://i.imgur.com/4Gn1dvc.jpg'),
     photographers: [photographer1, photographer2]
 })
 const b = new Category({
     name: "Portrait",
+    photo_url: ('css/images/portrait.jpeg'),
     photographers: [photographer2]
 })
 const c = new Category({
   name: "Pets",
+  photo_url: ('css/images/pet1.jpg'),
   photographers: [photographer3, photographer4]
 })
 const d = new Category({
   name: "Models",
+  photo_url: ('css/images/model1.jpg'),
   photographers: [photographer3]
 })
 

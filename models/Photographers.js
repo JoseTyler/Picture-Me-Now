@@ -5,7 +5,7 @@ const Schema = mongoose.Schema
 const Photographers = new Schema({
     name: String,
     city: String,
-    contact: Number,
+    contact: String,
     about: String,
     portfolio: [{
         type: Schema.Types.ObjectId,

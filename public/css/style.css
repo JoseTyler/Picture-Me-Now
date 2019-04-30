@@ -24,11 +24,19 @@
     text-align: center;
     text-decoration: none;
 }
+.subCategory{
+    display: flex;
+    flex-direction: column;
+}
 .noUnderline{
     text-decoration: none;
     color: black;
 }
-
+.picture{
+height: 45%;
+width: 45%;
+background-image: contain;
+}
 .title{
     /* border: solid green; */
     grid-column: span 2;

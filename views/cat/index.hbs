@@ -1,7 +1,11 @@
 <main class="category">
 	{{#each Cats}}
+	<div class="subCategory">
 <a class="noUnderline" href="/{{_id}}">{{name}}</a>
+<img class="picture" src="{{this.photo_url}}">
+</div>
 	{{/each}}
+	
 <br/>
 	<a href="/new">
 		<button>Create A Category</button>

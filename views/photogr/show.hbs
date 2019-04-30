@@ -1,9 +1,18 @@
-{{Cat.name}}
-
-{{#each Cat.photographers}}
-<a class="noUnderline" href="/{{_id}}">{{name}}</a>
-name: {{name}}
+<h1>{{Pro.name}}</h1>
+{{catId}}
+{{Pro._id}}
+<h1><a href="/{{catId}}/photographers/{{Pro._id}}/edit">Update Photographer Info</a></h1>
+{{#each Pro.portfolio}}
+{{!-- <a class="noUnderline" href="/{{_id}}">{{name}}</a> --}}
+{{!-- name: {{caption}} --}}
+{{caption}}
+<img src="{{url}}">
 {{/each}}
-<form action="/{{Cat._id}}?_method=DELETE" method="POST">
+
+{{!-- <form action="/{{Cat._id}}?_method=DELETE" method="POST">
     <button type="submit">Delete Category</button>
-</form>
+</form>  
+
+ <form action="/{{Cat._id}}?_method=DELETE" method="POST">
+    <button type="submit">Delete Category</button>
+</form>--}}

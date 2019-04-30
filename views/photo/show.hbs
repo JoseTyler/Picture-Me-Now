@@ -2,7 +2,7 @@
 
 {{#each photographers.photos}}
 <a class="noUnderline" href="/{{_id}}">{{name}}</a>
-name: {{name}}
+name: {{name}} 
 {{/each}}
 <form action="/{{Cat._id}}?_method=DELETE" method="POST">
     <button type="submit">Delete Category</button>

@@ -5,6 +5,7 @@ const catController = {
   // INDEX
   index: function(req, res) {
     Category.find().then(Cats => {
+      console.log(Cats)
       res.render("cat/index", { Cats });
     });
   },

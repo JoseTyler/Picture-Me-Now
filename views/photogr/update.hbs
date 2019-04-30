@@ -1,0 +1,12 @@
+<main>
+	<h2>Edit Photographer Info!</h2>
+	<a href="/photographers">Return to Photographer</a>
+	<div id="edit-form" class="donut-container-show">
+		<form action="/{{photographer._id}}?_method=PUT" method="POST">
+			<input type="text" name="name" value={{photographers.name}} placeholder="Name">
+			<input type="text" name="city" value={{photographers.city}} placeholder="City">
+			<input type="text" name="contact" value={{photographers.contact}} placeholder="Contact">
+			<input type="number" name="about" value={{photographers.about}} placeholder="About">
+		</form>
+	</div>
+</main>

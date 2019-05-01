@@ -7,13 +7,12 @@
 {{!-- <a class="noUnderline" href="/{{_id}}">{{name}}</a> --}}
 {{!-- name: {{caption}} --}}
 {{caption}}
-<img src="{{url}}">
+
+<a href="/{{../catId}}/photographers/{{../Pro._id}}/photos/{{_id}}"><img src="{{url}}"></a>
+
 {{/each}}
 {{!-- </div> --}}
-{{!-- <form action="/{{Cat._id}}?_method=DELETE" method="POST">
-    <button type="submit">Delete Category</button>
+<form action="/{{catId}}/photographers/{{Pro._id}}?_method=DELETE" method="POST">
+    <button type="submit">Delete A Photographer</button>
 </form>  
 
- <form action="/{{Cat._id}}?_method=DELETE" method="POST">
-    <button type="submit">Delete Category</button>
-</form>--}}

@@ -46,7 +46,7 @@ const photogrController = {
 
   // DELETE
   delete: function (req, res) {
-    Category.findByIdAndRemove(req.params.id).then(() => {
+    Photographers.findByIdAndRemove(req.params.proId).then(() => {
       res.redirect("/");
     });
   }

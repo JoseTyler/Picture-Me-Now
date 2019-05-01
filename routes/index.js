@@ -13,6 +13,9 @@ router.get('/photographers/', photogrController.index)
 // NEW CAT
 router.get('/new', catController.new)
 
+// DELETE CAT
+router.delete('/:id',catController.delete)
+
 // SHOW PRO
 router.get('/:id/photographers/:proId', photogrController.show)
 
@@ -25,16 +28,19 @@ router.post('/',catController.create)
 // EDIT PRO
 router.get("/:id/photographers/:proId/edit", photogrController.edit)
 
-// UPDATE
+// UPDATE PRO
 router.put("/:id/photographers/:proId",photogrController.update)
+
+// DELETE PRO
+router.delete('/:id/photographers/:proId',photogrController.delete)
 
 // UPDATE CAT
 // router.put("/:id",catController.update)
 
-//   CAT
-router.delete('/:id',catController.delete)
 
-// module.exports = router
+// // SHOW PHOTOS
+router.get('/:id/photographers/:proId/photos/:photoId', photoController.show)
+
 
 // ------------------------------------------------------
 
@@ -49,8 +55,6 @@ router.delete('/:id',catController.delete)
 // router.post('/photographers/',photogrController.create)
 
 
-// // DELETE
-// router.delete('/photographers/:proId',photogrController.delete)
 
 // // module.exports = router
 
@@ -62,8 +66,6 @@ router.delete('/:id',catController.delete)
 // // NEW
 // router.get('/new', photoController.new)
 
-// // SHOW
-// router.get('/:id', photoController.show)
 
 // // CREATE
 // router.post('/',photoController.create)

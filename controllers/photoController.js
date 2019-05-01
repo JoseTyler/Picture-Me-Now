@@ -12,12 +12,12 @@ const photoController = {
   new: function(req, res) {
     res.render("photo/new");
   },
-
+  
   // SHOW
   show: function(req, res) {
-    Category.findById(req.params.id).then(Cat => {
-      res.render("photo/show", { Cat });
-    });
+    Photos.findById(req.params.photoId).then((photo)=>{
+res.render("photo/show", {photo})
+    })
   },
 
   // CREATE

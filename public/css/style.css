@@ -1,6 +1,6 @@
 @font-face{font-family: Chelsea; src: url("/css/fonts/Chelsea.otf");}
-@font-face{font-family: Stella; src: url("/css/fonts/Stella.ttf");
-}
+@font-face{font-family: Stella; src: url("/css/fonts/Stella.ttf");}
+@font-face{font-family: Digi; src: url("/css/fonts/Digizen.ttf");}
 
 .body{
     background-image: url('/css/images/background.jg');
@@ -42,9 +42,9 @@ background-image: contain;
     /* border: solid green; */
     grid-column: span 2;
     grid-row: 1;
-    font-family: Chelsea;
+    font-family: Digi;
     text-align: center;
-    font-size: 140px;
+    font-size: 60px;
     color: rgb(0, 0, 0);
     padding-bottom:20px;
     padding-top: 20px;

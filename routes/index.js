@@ -23,7 +23,7 @@ router.get('/:id', catController.show)
 router.post('/',catController.create)
 
 // EDIT PRO
-router.get("/:id/photographers/:proId/edit",photogrController.edit)
+router.get("/:id/photographers/:proId/edit", photogrController.edit)
 
 // UPDATE
 router.put("/:id/photographers/:proId",photogrController.update)

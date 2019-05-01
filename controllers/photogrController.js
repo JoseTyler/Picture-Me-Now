@@ -31,15 +31,16 @@ const photogrController = {
 
   // UPDATE
   update: function (req, res) {
-    Photographers.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(() => {
-      res.redirect(`/${req.params.id}/photographers/${req.params.proId} + req.params.id`);
+    Photographers.findByIdAndUpdate(req.params.proId, req.body, { new: true }).then((fixed) => {
+      console.log(fixed)
+      res.redirect(`/${req.params.id}/photographers/${req.params.proId}`);
     });
   },
 
   // EDIT
   edit: function (req, res) {
-    Photographers.findById(req.params.proId).then((Pro) => {
-      res.render("photogr/update", { Pro: Pro, catId: req.params.id, proId: req.params.proId })
+    Photographers.findById(req.params.proId).then((photographers) => {
+      res.render("photogr/update", { photographers: photographers, catId: req.params.id, proId: req.params.proId })
     });
   },
 

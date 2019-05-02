@@ -1,12 +1,14 @@
 <h1>{{Pro.name}}</h1>
-<div class="center2">{{Pro.city}}
-{{Pro.contact}}
-{{Pro.about}}
+<div class="center2">
+    {{Pro.city}}<br>
+    {{Pro.contact}}<br>
+    {{Pro.about}}</div>
+    
 <button class="button"><a class="noUnderline" href="/{{catId}}/photographers/{{Pro._id}}/edit">Update Photographer
-        Info</a></button></div>
+        Info</a></button>
 
 
-<form class= "center2" action="/{{catId}}/photographers/{{Pro._id}}/photos/new" method="POST">
+<form class="center2" action="/{{catId}}/photographers/{{Pro._id}}/photos/new" method="POST">
     <input type="text" name="url" placeholder="Add URL" />
     <input type="text" name="caption" placeholder="Add Caption" />
     <button class="button" type="submit">Add A Picture</button>

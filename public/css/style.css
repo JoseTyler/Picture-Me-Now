@@ -1,43 +1,60 @@
-@font-face{font-family: Loves; src: url("/css/fonts/Loves.ttf");}
-@font-face{font-family: Stella; src: url("/css/fonts/Stella.ttf");}
-@font-face{font-family: Digi; src: url("/css/fonts/Digizen.ttf");}
-
-.body{
-    background-image: url('/css/images/background.jg');
-    background-repeat: no-repeat;
-    background-size:  cover;
-    margin: 0;
+@font-face {
+    font-family: Loves;
+    src: url("/css/fonts/Loves.ttf");
 }
 
-.category{
+@font-face {
+    font-family: Stella;
+    src: url("/css/fonts/Stella.ttf");
+}
+
+@font-face {
+    font-family: Digi;
+    src: url("/css/fonts/Digizen.ttf");
+}
+
+.body {
+    background-image: url('/css/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+    margin: 0;
+   
+}
+
+.category {
     /* border: solid red; */
     border-radius: 20px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr;
     height: 72vh;
-    background: rgb(0, 0, 0,);
+    background: rgb(0, 0, 0, );
     font-family: Loves;
     font-size: 40px;
     color: solid black;
     text-align: center;
     text-decoration: none;
-    
 }
-.subCategory{
+
+.subCategory {
     display: flex;
     flex-direction: column;
 }
-.noUnderline{
+
+.noUnderline {
     text-decoration: none;
     color: black;
 }
-.picture{
-height: auto;
-width: 50vw;
-background-image: contain;
+
+.picture {
+    height: auto;
+    width: 50vw;
+    background-image: contain;
 }
-.title{
+
+.title {
     /* border: solid green; */
     grid-column: span 2;
     grid-row: 1;
@@ -45,28 +62,29 @@ background-image: contain;
     text-align: center;
     font-size: 60px;
     color: rgb(0, 0, 0);
-    padding-bottom:20px;
+    padding-bottom: 20px;
     padding-top: 20px;
     /* background: white; */
     /* -webkit-text-stroke: 2px rgb(197, 146, 15); */
 }
 
-.center{
+.center {
     text-align: center;
     font-size: 30px;
     font-family: Digi;
 }
 
-.button{
-    background-color:red;
+.button {
+    background-color: rgb(192, 16, 16);
     border-radius: 20px;
     height: 30px;
     font-family: Arial, Helvetica, sans-serif;
     grid-column: span 2;
-    grid-row: 3;  
+    grid-row: 3;
 }
-.button1{
-    background-color:red;
+
+.button1 {
+    background-color: rgb(192, 16, 16);
     border-radius: 20px;
     height: 30px;
     font-family: Arial, Helvetica, sans-serif;
@@ -74,48 +92,67 @@ background-image: contain;
     margin-top: 520px;
 }
 
-h1{
+.button2 {
+    background-color: rgb(192, 16, 16);
+    border-radius: 20px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    align-content: center;
+}
+
+.form1{
+    text-align: center;
+}
+
+h1 {
     font-family: chelsea;
 }
 
 /* ------------------------------------------------------------------------ */
 
 /* NAV BAR SETTINGS */
+
 .topnav {
     background-color: rgb(187, 133, 133);
-    box-shadow: 0 2px 2px -2px rgba(0,0,0,.9);
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .9);
     overflow: hidden;
     font-family: NixieOne;
     display: flex;
     justify-content: flex-end;
     position: sticky;
-    top: 0; 
+    top: 0;
 }
-  
+
 /* CURRENT LINK COLOR */
-  .topnav a.active {
+
+.topnav a.active {
     /* background-color: rgb(165, 165, 165); */
     color: rgb(0, 0, 0);
 }
-  
+
 /* LINKS */
-  .topnav a {   
+
+.topnav a {
     color: #ffffff;
     text-align: center;
     padding: 16px 16px;
+    padding-left: 20px;
     text-decoration: none;
-    font-size: 25px;   
+    font-size: 25px;
 }
-  
+
 /* HOVER COLOR */
-  .topnav a:hover {   
-    color: rgb(255, 0, 0);
+
+.topnav a:hover {
+    color: rgb(0, 0, 0);
 }
 
 /* NAV ICON */
-  #cameraicon{
-      height: 50px;
-      padding-right: 850px;
-      padding-top: 7px;
-      color: white;
+
+#cameraicon {
+    height: 50px;
+    padding-right: 850px;
+    padding-top: 7px;
+    color: white;
 }

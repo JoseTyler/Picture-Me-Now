@@ -3,7 +3,7 @@ const Category = require("../models/Category");
 
 const catController = {
   // INDEX
-  index: function(req, res) {
+  index: function (req, res) {
     Category.find().then(Cats => {
       console.log(Cats)
       res.render("cat/index", { Cats });
@@ -11,12 +11,12 @@ const catController = {
   },
 
   // NEW
-  new: function(req, res) {
+  new: function (req, res) {
     res.render("cat/new");
   },
 
   // SHOW
-  show: function(req, res) {
+  show: function (req, res) {
     Category.findById(req.params.id).populate("photographers").then(Cat => {
       console.log(Cat)
       res.render("cat/show", { Cat });
@@ -24,19 +24,19 @@ const catController = {
   },
 
   // CREATE
-  create: function(req, res) {
+  create: function (req, res) {
     console.log(req);
     Category.create(req.body).then(() => res.redirect("/"));
   },
-  
+
   // UPDATE
-//     Donut.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(() => {
-//       res.redirect("/" + req.params.id);
-//     });
-//   },
-  
+  //     Donut.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(() => {
+  //       res.redirect("/" + req.params.id);
+  //     });
+  //   },
+
   // DELETE
-  delete: function(req, res) {
+  delete: function (req, res) {
     Category.findByIdAndRemove(req.params.id).then(() => {
       res.redirect("/");
     });

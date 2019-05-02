@@ -17,11 +17,11 @@ router.get('/photographers/', photogrController.index)
 router.get('/new', catController.new)
 
 // DELETE CAT
-router.delete('/:id',catController.delete)
+router.delete('/:id', catController.delete)
 
 // SHOW PRO
 router.get('/:id/photographers/:proId', photogrController.show)
- 
+
 // create pro
 router.post('/:id/new', photogrController.create)
 
@@ -30,19 +30,19 @@ router.post('/:id/new', photogrController.create)
 router.get('/:id', catController.show)
 
 // CREATE  CAT
-router.post('/',catController.create)
+router.post('/', catController.create)
 
 // EDIT PRO
 router.get("/:id/photographers/:proId/edit", photogrController.edit)
 
 // UPDATE PRO
-router.put("/:id/photographers/:proId",photogrController.update)
+router.put("/:id/photographers/:proId", photogrController.update)
 
 // DELETE PRO
-router.delete('/:id/photographers/:proId',photogrController.delete)
+router.delete('/:id/photographers/:proId', photogrController.delete)
 
 // CREATE PHOTOS
-router.post('/:id/photographers/:proId/photos/new',photoController.create)
+router.post('/:id/photographers/:proId/photos/new', photoController.create)
 
 // SHOW PHOTOS
 router.get('/:id/photographers/:proId/photos/:photoId', photoController.show)

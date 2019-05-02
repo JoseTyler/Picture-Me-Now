@@ -1,17 +1,6 @@
-@font-face {
-    font-family: Loves;
-    src: url("/css/fonts/Loves.ttf");
-}
-
-@font-face {
-    font-family: Stella;
-    src: url("/css/fonts/Stella.ttf");
-}
-
-@font-face {
-    font-family: Digi;
-    src: url("/css/fonts/Digizen.ttf");
-}
+/* FONTS BEING USED */
+@font-face {font-family: Loves; src: url("/css/fonts/Loves.ttf");}
+@font-face {font-family: Digi; src: url("/css/fonts/Digizen.ttf");}
 
 .body {
     background-image: url('/css/images/background.jpg');
@@ -63,8 +52,6 @@
     color: rgb(0, 0, 0);
     padding-bottom: 20px;
     padding-top: 20px;
-    /* background: white; */
-    /* -webkit-text-stroke: 2px rgb(197, 146, 15); */
 }
 
 .center {

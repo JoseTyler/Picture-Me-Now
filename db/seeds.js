@@ -9,7 +9,7 @@ const photo1m = new Photos({
 })
 const photo2m = new Photos({
     url: "https://i.imgur.com/ZJb8a60.jpg", //jose
-    caption: "Come Pick Me Up Bro"    
+    caption: "Can you hear me now?"    
 })
 const photo3m = new Photos({
     url: "https://i.imgur.com/MqvlpH0.jpg", //jose

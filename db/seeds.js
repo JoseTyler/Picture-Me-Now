@@ -5,11 +5,11 @@ const Photos = require('../models/Photos')
 
 const photo1m = new Photos({
         url: "https://i.imgur.com/0Ut53pZ.jpg", //jose
-    caption: "Hello There"   
+    caption: "Roller Coaster"   
 })
 const photo2m = new Photos({
     url: "https://i.imgur.com/ZJb8a60.jpg", //jose
-    caption: "Hello There"    
+    caption: "Come Pick Me Up Bro"    
 })
 const photo3m = new Photos({
     url: "https://i.imgur.com/MqvlpH0.jpg", //jose

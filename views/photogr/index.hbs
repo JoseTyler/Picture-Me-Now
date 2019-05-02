@@ -1,10 +1,16 @@
 <main class="category">
 	{{#each Pro}}
-{{!-- <a href="/{{_id}}">{{name}}</a> --}}
-{{name}}
+
+	{{name}}
+	{{city}}
+	{{contact}}
+	<div>
+		{{#each portfolio}}
+		<img src="{{url}}">
+		{{/each}}
+	</div>
+	
 	{{/each}}
-<br/>
-	<a href="/new">
-		<button>Create A Profile</button>
-	</a>
+	<br />
+
 </main>

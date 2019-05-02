@@ -1,5 +1,14 @@
 {{Cat.name}}
 <div class="category">
+<form action="/{{Cat._id}}/new" method="POST">
+    <input type="text" name="name" placeholder="name"/>
+    <input type="text" name="city" placeholder="city"/>
+    <input type="text" name="contact" placeholder="contact"/>
+    <input type="text" name="about" placeholder="about"/>    
+    <button type="submit">Add A Photographer</button>
+</form> 
+
+
 {{#each Cat.photographers}}
 <a class="noUnderline" href="/{{../Cat._id}}/photographers/{{_id}}">{{name}}</a>
 {{!-- name: {{name}} --}}

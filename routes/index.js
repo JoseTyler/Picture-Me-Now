@@ -6,6 +6,9 @@ const photoController = require('../controllers/photoController')
 
 // INDEX CAT
 router.get('/', catController.index)
+// INDEX CAT
+router.get('/photos', photoController.index)
+
 
 // INDEX PRO
 router.get('/photographers/', photogrController.index)
@@ -18,6 +21,10 @@ router.delete('/:id',catController.delete)
 
 // SHOW PRO
 router.get('/:id/photographers/:proId', photogrController.show)
+ 
+// create pro
+router.post('/:id/new', photogrController.create)
+
 
 // SHOW CAT
 router.get('/:id', catController.show)
@@ -34,12 +41,14 @@ router.put("/:id/photographers/:proId",photogrController.update)
 // DELETE PRO
 router.delete('/:id/photographers/:proId',photogrController.delete)
 
-// UPDATE CAT
-// router.put("/:id",catController.update)
+// CREATE PHOTOS
+router.post('/:id/photographers/:proId/photos/new',photoController.create)
 
-
-// // SHOW PHOTOS
+// SHOW PHOTOS
 router.get('/:id/photographers/:proId/photos/:photoId', photoController.show)
+
+// DELETE
+router.delete('/:id/photographers/:proId/photos/:photoId', photoController.delete)
 
 
 // ------------------------------------------------------
@@ -67,13 +76,10 @@ router.get('/:id/photographers/:proId/photos/:photoId', photoController.show)
 // router.get('/new', photoController.new)
 
 
-// // CREATE
-// router.post('/',photoController.create)
 
 // // UPDATE
 // // router.put("/:id",catController.update)
 
-// // DELETE
-// router.delete('/:id',photoController.delete)
+
 
 module.exports = router

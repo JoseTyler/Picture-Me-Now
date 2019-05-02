@@ -1,10 +1,11 @@
 const Photos = require("../models/Photos");
+const Photographers = require("../models/Photographers");
 
 const photoController = {
   // INDEX
   index: function(req, res) {
-    Category.find().then(Cats => {
-      res.render("photo/index", { Cats });
+    Photos.find().then(photo => {
+      res.render("photo/index", { photo });
     });
   },
 
@@ -15,27 +16,31 @@ const photoController = {
   
   // SHOW
   show: function(req, res) {
+    let proId =req.params.proId
+    let catId =req.params.id
     Photos.findById(req.params.photoId).then((photo)=>{
-res.render("photo/show", {photo})
+res.render("photo/show", {photo, proId, catId})
     })
   },
 
   // CREATE
   create: function(req, res) {
-    console.log(req);
-    Category.create(req.body).then(() => res.redirect("/"));
+    Photographers.findById(req.params.proId).then((Photogra)=>{
+      Photos.create(req.body).then((newPhoto)=>{
+      Photogra.portfolio.push(newPhoto._id)
+      Photogra.save()
+      res.redirect(`/${req.params.id}/photographers/${req.params.proId}`)
+      })
+    })
+
+    
   },
   
-  // UPDATE
-//     Donut.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(() => {
-//       res.redirect("/" + req.params.id);
-//     });
-//   },
-  
+
   // DELETE
   delete: function(req, res) {
-    Category.findByIdAndRemove(req.params.id).then(() => {
-      res.redirect("/");
+    Photos.findByIdAndRemove(req.params.photoId).then(() => {
+      res.redirect(`/${req.params.id}/photographers/${req.params.proId}`);
     });
   }
 };

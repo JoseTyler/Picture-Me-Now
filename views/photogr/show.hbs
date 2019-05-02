@@ -1,17 +1,26 @@
-{{!-- <div class="category"> --}}
+
 <h1>{{Pro.name}}</h1>
-{{catId}}
-{{Pro._id}}
+    {{Pro.city}}
+    {{Pro.contact}}
+    {{Pro.about}}
 <h1><a href="/{{catId}}/photographers/{{Pro._id}}/edit">Update Photographer Info</a></h1>
+
+
+<form action="/{{catId}}/photographers/{{Pro._id}}/photos/new" method="POST">
+    <input type="text" name="url" placeholder="Add URL"/>
+    <input type="text" name="caption" placeholder="Add Caption"/>    
+    <button type="submit">Add A Picture</button>
+    
+</form> 
+
 {{#each Pro.portfolio}}
-{{!-- <a class="noUnderline" href="/{{_id}}">{{name}}</a> --}}
-{{!-- name: {{caption}} --}}
+
 {{caption}}
 
 <a href="/{{../catId}}/photographers/{{../Pro._id}}/photos/{{_id}}"><img src="{{url}}"></a>
 
 {{/each}}
-{{!-- </div> --}}
+
 <form action="/{{catId}}/photographers/{{Pro._id}}?_method=DELETE" method="POST">
     <button type="submit">Delete A Photographer</button>
 </form>  

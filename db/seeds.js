@@ -73,7 +73,7 @@ const a = new Category({
 })
 const b = new Category({
     name: "Portrait",
-    photo_url: ('https://i.imgur.com/5RpCZeQ.jpg'),
+    photo_url: ('https://i.imgur.com/IE6hu1B.jpg'),
     photographers: [photographer2]
 })
 const c = new Category({

@@ -3,7 +3,8 @@
 <div class="category">
 <img src="{{photo.url}}">
 <p>{{photo.caption}}</p>
-</div>
+
 <form action="/{{catId}}/photographers/{{proId}}/photos/{{photo._id}}?_method=DELETE" method="POST">
-    <button type="submit">Delete A Picture</button>
+    <button class="button" type="submit">Delete A Picture</button>
 </form>
+</div>

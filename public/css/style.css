@@ -1,4 +1,4 @@
-@font-face{font-family: Chelsea; src: url("/css/fonts/Chelsea.otf");}
+@font-face{font-family: Loves; src: url("/css/fonts/Loves.ttf");}
 @font-face{font-family: Stella; src: url("/css/fonts/Stella.ttf");}
 @font-face{font-family: Digi; src: url("/css/fonts/Digizen.ttf");}
 
@@ -9,7 +9,6 @@
     margin: 0;
 }
 
-
 .category{
     /* border: solid red; */
     border-radius: 20px;
@@ -18,8 +17,8 @@
     grid-template-rows: 1fr 1fr;
     height: 72vh;
     background: rgb(0, 0, 0,);
-    font-family: Chelsea;
-    font-size: 80px;
+    font-family: Loves;
+    font-size: 40px;
     color: solid black;
     text-align: center;
     text-decoration: none;
@@ -50,9 +49,16 @@ background-image: contain;
     padding-top: 20px;
     /* background: white; */
     /* -webkit-text-stroke: 2px rgb(197, 146, 15); */
-
 }
 
+.button{
+    background-color:red;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-column: span 2;
+    grid-row: 3;
+    
+}
 .block1{
     border: solid blue;
     grid-column: 1;

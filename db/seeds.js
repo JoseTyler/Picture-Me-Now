@@ -13,103 +13,103 @@ const photo2m = new Photos({
 })
 const photo3m = new Photos({
     url: "https://i.imgur.com/MqvlpH0.jpg", //jose
-    caption: "Hello There"
+    caption: "Smile for the world!"
 })
 const photo4m = new Photos({
     url: "https://i.imgur.com/esmYTJB.jpg", //jose
-    caption: "Hello There"
+    caption: "Bet, She lookin at me!"
 })
 const photo5m = new Photos({
     url: "https://i.imgur.com/V2njqAc.jpg", //eric
-    caption: "Hello There"
+    caption: "They better not bite me!"
 })
 const photo6m = new Photos({
     url: "https://i.imgur.com/3hSDcbK.jpg", //mary
-    caption: "Hello There"
+    caption: "Damn im lost!"
 })
 const photo7m = new Photos({
     url: "https://i.imgur.com/HzYrzsO.jpg", //eric
-    caption: "Hello There"
+    caption: "I like crushing ants!"
 })
 const photo8m = new Photos({
     url: "https://i.imgur.com/6WGW8FQ.png", //adam
-    caption: "Hello There"
+    caption: "Can I help you?"
 })
 const photo9m = new Photos({
     url: "https://i.imgur.com/LaHzq1a.jpg", //adam
-    caption: "Hello There"
+    caption: "This chair hurts!"
 })
 const photo1p = new Photos({
     url: "https://i.imgur.com/lu0kj0h.jpg", //eric
-    caption: "Hello There"
+    caption: "It's my BIRTHDAY!"
 })
 const photo2p = new Photos({
     url: "https://i.imgur.com/MZCEhN8.jpg", //adam
-    caption: "Hello There"
+    caption: "Is there a problem?"
 })
 const photo3p = new Photos({
     url: "https://i.imgur.com/eqtz5wA.jpg", //mary
-    caption: "Hello There"
+    caption: "Help, I can't swim!"
 })
 const photo4p = new Photos({
     url: "https://i.imgur.com/6yya1xC.jpg", //eric
-    caption: "Hello There"
+    caption: "I can make my ears stick out!"
 })
 const photo1por = new Photos({
     url: "https://i.imgur.com/5cy2e9R.jpg", //jose
-    caption: "Hello There"
+    caption: "Its my day!"
 })
 const photo2por = new Photos({
     url: "https://i.imgur.com/g39a3DY.jpg", //jose
-    caption: "Hello There"
+    caption: "My makeup on Fleek!"
 })
 const photo3por = new Photos({
     url: "https://i.imgur.com/81uZTMt.jpg", //jose
-    caption: "Hello There"
+    caption: "Haters gonna hate!"
 })
 const photo4por = new Photos({
     url: "https://i.imgur.com/Duer8cX.jpg", //adam
-    caption: "Hello There"
+    caption: "It's Saint Patricks Day!"
 })
 const photo5por = new Photos({
     url: "https://i.imgur.com/IE6hu1B.jpg", //eric
-    caption: "Hello There"
+    caption: "I gotta blink, hurry!"
 })
 const photo6por = new Photos({
     url: "https://i.imgur.com/z2IRPd3.jpg", //mary
-    caption: "Hello There"
+    caption: "Which way is North?"
 })
 const photo7por = new Photos({
     url: "https://i.imgur.com/dQzxU39.jpg", //adam
-    caption: "Hello There"
+    caption: "Hurry Dad, I wanna go play Fortnite!"
 })
 const photo8por = new Photos({
     url: "https://i.imgur.com/5RpCZeQ.jpg", //eric
-    caption: "Hello There"
+    caption: "That's interesting, tell me more!"
 })
 const photo1e = new Photos({
     url: "https://i.imgur.com/KggOKYW.jpg", //jose
-    caption: "Hello There"
+    caption: "Where did I leave my phone?"
 })
 const photo2e = new Photos({
     url: "https://i.imgur.com/uoF5uqs.jpg", //jose
-    caption: "Hello There"
+    caption: "I love dancing!"
 })
 const photo3e = new Photos({
     url: "https://i.imgur.com/uosR31J.jpg", //jose
-    caption: "Hello There"
+    caption: "You better not drop me!"
 })
 const photo4e = new Photos({
     url: "https://i.imgur.com/4Gn1dvc.jpg", //mary
-    caption: "Hello There"
+    caption: "You smell good!"
 })
 const photo5e = new Photos({
     url: "https://i.imgur.com/Duer8cX.jpg", //eric
-    caption: "Hello There"
+    caption: "Confetti Party!"
 })
 const photo6e = new Photos({
     url: "https://i.imgur.com/Duer8cX.jpg", //adam
-    caption: "Hello There"
+    caption: "Im so lucky!"
 })
 
 const photographer1 = new Photographers({
